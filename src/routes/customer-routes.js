@@ -8,5 +8,7 @@ const controller = require('../controllers/customer-controller');
 
 
 router.post('/',controller.post);
+router.post('/authenticate',controller.authenticate);
+router.post('/refresh-token',controller.authenticate);
 
 module.exports = router;
